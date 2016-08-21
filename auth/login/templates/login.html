@@ -1,0 +1,18 @@
+<html>
+    
+    <body>
+        <p>Hey yo!
+            {{ request.build_absolute_uri }}dsa
+            {{ object.get_absolute_url }}
+    </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $.post('http://localhost:8000/login/', {url: window.location.href});
+});
+
+
+
+
+</script>
